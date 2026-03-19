@@ -1,0 +1,26 @@
+<h2>{{isEdit ? 'Edit Person' : 'Add Person'}}</h2>
+
+<form>
+  <div>
+    <label>First Name:</label>
+    <input [(ngModel)]="person.firstName" name="firstName" required>
+  </div>
+  <div>
+    <label>Last Name:</label>
+    <input [(ngModel)]="person.lastName" name="lastName" required>
+  </div>
+  <div>
+    <label>Email:</label>
+    <input [(ngModel)]="person.email" name="email" required>
+  </div>
+  <div>
+    <label>Phone:</label>
+    <input [(ngModel)]="person.phone" name="phone">
+  </div>
+  <div>
+    <label>Address:</label>
+    <input [(ngModel)]="person.address" name="address">
+  </div>
+  <button type="button" (click)="save()">Save</button>
+  <button type="button" (click)="cancel()">Cancel</button>
+</form>

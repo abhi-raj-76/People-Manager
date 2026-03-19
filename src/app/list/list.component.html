@@ -1,0 +1,34 @@
+<h2>People List</h2>
+
+<p>Debug: People array length: {{ people.length }}</p>
+
+<button (click)="add()">Add Person</button>
+
+<table border="1">
+  <tr>
+    <th>ID</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>Address</th>
+    <th>Actions</th>
+  </tr>
+
+  <tr *ngFor="let p of people">
+    <td>{{ p.id }}</td>
+    <td>{{ p.firstName }}</td>
+    <td>{{ p.lastName }}</td>
+    <td>{{ p.email }}</td>
+    <td>{{ p.phone }}</td>
+    <td>{{ p.address }}</td>
+    <td>
+      <button (click)="edit(p.id)">Edit</button>
+      <button (click)="delete(p.id)">Delete</button>
+    </td>
+  </tr>
+</table>
+
+<div *ngIf="people.length === 0">
+  <p>No people found. Loading data...</p>
+</div>
