@@ -25,7 +25,7 @@ A simple Single Page Application (SPA) to manage a list of people. This project 
 
 ## 📸 Screenshot
 
-![App Screenshot](Screenshot 2026-03-19 163106.png)
+![App Screenshot](image.png)
 
 ---
 
